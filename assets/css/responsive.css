@@ -76,6 +76,22 @@
     }
     /* Home Page End */
 
+
+
+    .bnft p { 
+        margin-top: 0px;
+        padding: 9px 10px;
+    }
+    .register_area::before{ 
+        height: 75%; 
+    }
+    .stp_sqr_img img { 
+        max-width: 75px;
+    }
+    .stps button { 
+        padding: 10px 70px; 
+    }
+
 }
 
  
@@ -173,6 +189,87 @@
         padding: 70px;
     }
     /* Home Page End */
+
+
+
+
+    .hr_blks .hr_blk {
+        font-size: 10px;
+    }
+
+    .hr_blks .hr_blk:nth-child(2) {
+        padding: 20px 10px; 
+    }
+    .header a.logo-area {
+        display: block;
+        margin: auto;
+    }
+    
+    .header img.right_imgs {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .hr_wrp h1 {
+        font-size: 28px; 
+        margin-top: 30px;
+    }
+    .hr_wrp h3 {
+        font-size: 18px; 
+    }
+
+    .register_wrp {flex-wrap: wrap;}
+
+    .register_wrp > form {
+        width: 100%;
+    }
+    
+    .register_wrp > form img.arrowDown {
+        display: none;
+    }
+    
+    .register_wrp .bnft {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .srcs {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .srcs img {
+        margin: 0 10px;
+    }
+    .register_area {  
+        padding-bottom: 50px;
+    }
+    .stps button { 
+        padding: 10px 50px; 
+    }
+    .stp_sqr {
+        width: 100%;
+    }
+    
+    .sqr_blk {
+        flex-wrap: wrap;
+    }
+    
+    .stp_sqr_img img {
+        margin-left: 5px;
+        max-width: 80px;
+    }
+    form.stp1 button { 
+        margin-top: 40px; 
+    }
+    .stp_right {
+        min-width: 250px;
+        max-width: 250px;
+        margin-left: 30px;
+    }
+
+
+
 
 }
 
@@ -278,9 +375,7 @@
     .Countdown_wrp h6 {
         font-size: 3.5rem;
     }
-    
-    .Countdown_wrp p {
-    }
+     
     
     .Countdown_wrp ul {
         justify-content: space-between;
@@ -304,9 +399,7 @@
 }
     
     section.blog_area .row:nth-child(4) {justify-content: center;}
-
-section.blog_area .row:nth-child(4) .col-md-6 {
-}
+ 
     .Countdown_wrp {
         margin: 40px 0 50px;
         overflow: hidden;
@@ -362,8 +455,7 @@ section.service_area .row {
 .footer_nav h5 {
     margin-bottom: 15px;
 }
-
-v {}
+ 
     
     .footer_btm {
         margin-top: 0px;
@@ -390,6 +482,150 @@ section.site_info p {
         padding: 35px;
     }
     /* Home Page End */
+
+
+
+
+
+
+
+
+
+
+    .hr_blks .hr_blk {
+        font-size: 8px;
+    }
+
+    .hr_blks .hr_blk:nth-child(2) {
+        padding: 20px 10px; 
+    }
+    .header a.logo-area {
+        display: block;
+        margin: auto;
+    }
+    
+    .header img.right_imgs {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .hr_wrp h1 {
+        font-size: 22px;
+        margin-top: 20px;
+    }
+    .hr_wrp h3 {
+        font-size: 14px; 
+    }
+
+    .register_wrp {flex-wrap: wrap;}
+
+    .register_wrp > form {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .register_wrp > form img.arrowDown {
+        display: none;
+    }
+    
+    .register_wrp .bnft {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .srcs {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .srcs img {
+        margin: 0 10px;
+    }
+    .register_area {  
+        padding-bottom: 50px;
+    }
+    .register_wrp > form img.sile { 
+        top: -15px;
+        right: -3px; 
+        height: 50px;
+    }
+    .register_wrp > form label > input { 
+        height: 30px;
+    }
+    .register_wrp > form button { 
+        margin-top: 20px; 
+        padding: 10px; 
+        font-size: 16px; 
+    }
+
+    .opts img.opt_arrow { 
+        top: 85px;
+        left: 10%;
+    }
+    .footer { 
+        padding: 30px 0;
+        margin-top: 0px;
+    }
+    .footer-wrp p.fwMns a { 
+        margin-left: 5px;
+        padding-left: 5px; 
+    }
+    .stp_sqr {
+        width: 100%;
+        text-align: right;
+    }
+    
+    .sqr_blk {
+        flex-wrap: wrap;
+        padding: 20px 10px;
+        margin-top: 5px;
+    }
+    
+    .stp_sqr_img img {
+        margin-left: 5px;
+        max-width: 70px;
+    }
+    form.stp1 button { 
+        margin-top: 40px; 
+    }
+    .stp_right {
+        min-width: 100%;
+        max-width: 100%;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    .stp_wrp {
+        flex-wrap: wrap;
+    }
+    
+    .stps {
+        padding: 15px 20px;
+        overflow: auto;
+    }
+    
+    .stps button {padding: 10px 118px;margin-right: 15px;white-space: nowrap;}
+    .stps::-webkit-scrollbar{
+        height: 0;
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 }
  
