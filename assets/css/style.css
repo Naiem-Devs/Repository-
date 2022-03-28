@@ -13,7 +13,7 @@ html{
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400; 
-  font-size: 1.6rem; 
+  font-size: 12px;
   margin: 0;
   padding: 0;
 }
@@ -147,8 +147,7 @@ li {
   border: 2px solid white;
   transition: .3s;
 }  
-
-.menu-area{}
+ 
 
 /* humbergar */
 .bar a {
@@ -184,15 +183,18 @@ li {
   position: fixed;
   width: 320px;
   height: 100vh;
-  background: #ffffff;
+  background: #2F80ED;
   z-index: 99;
   box-shadow: 0px 0px 9px -1px #737373;
   top: 0;
   left: 0;
   transition: .3s;
   margin-left: -400px;
-  padding-left: 40px;
-  padding-top: 100px;
+  padding: 30px 30px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 .siteBar{
   margin-left: 0; 
@@ -254,16 +256,107 @@ li {
     opacity: .5;
 }
 .mobile-menu a.bars {
-  position: absolute;
-  right: 20px;
-  top: 15px;
-  width: 40px;
-  height: 40px;
   text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
+  line-height: 38px;
   font-size: 3.2rem;
-  color: #000;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  float: left;
+  position: relative;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 9px;
+  padding: 7px 9px;
+  padding-top: 4px;
+  background: rgba(255, 255, 255, 0.25);
+  margin-bottom: 30px;
+}
+.mobile-menu ul {
+  margin-top: 30px;
+}
+
+.mobile-menu ul a {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 30px;
+  display: block;
+  position: relative;
+  transition: .3s;
+  color: #fff;
+}
+
+.mobileBtn {
+  display: block;
+  text-align: center;
+  width: max-content;
+  margin: auto;
+}
+
+.mobileBtn a {
+  display: block;
+  width: 100%;
+  padding: 13px 30px;
+  font-size: 16px;
+  border: 1px solid white;
+  background: none;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: .3s;
+}
+
+.mobileBtn a:last-child {
+  background: #fff;
+  color: red;
+  font-weight: 600;
+}
+.mobile-menu ul a span {
+  display: block;
+  width: 35px;
+  height: 1px;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.mobile-menu ul a span:after,.mobile-menu ul a span:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: white;
+  transition: .3s;
+}
+
+.mobile-menu ul a span:after {
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+}
+
+.mobile-menu ul a span:before {
+  width: 0%;
+  height: 3px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 100px;
+}
+
+.mobile-menu ul a.active span:before {
+  width: 74%;
+}
+
+.mobile-menu ul a.active span {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Header section END */
@@ -278,14 +371,7 @@ section.hero_area img.hero_bg {
     z-index: -1;
     height: 1010px;
     object-fit: cover;
-}
-.container {
-}
-.row {
-}
-.col-lg-6 {
-}
-.hero_cont {}
+} 
 
 .hero_cont p {
     font-size: 1.8rem;
@@ -834,6 +920,7 @@ label.checkBx {
   display: flex;
   font-size: 11px;
   line-height: 15px;
+  text-align: center;
 }
 
 .register_wrp > form label.checkBx input#checkIt {
@@ -854,8 +941,45 @@ label.checkBx {
   border-radius: 100px;
   font-size: 20px;
   color: #fff;
-  font-weight: 300;
+  font-weight: 700;
+  overflow: hidden;
+  position: relative;
 }
+.register_wrp > form button i {
+  position: absolute;
+  right: 25px;
+  top: 50%;  
+  -webkit-animation: ripple .6s linear infinite;
+  animation: ripple .6s linear infinite; 
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 100%; 
+}
+
+
+
+@-webkit-keyframes ripple{
+  0%{box-shadow:0 0 0 0 rgba(255,255,255,.1),0 0 0 20px rgba(255,255,255,.1),0 0 0 40px rgba(255,255,255,.1),0 0 0 60px rgba(255,255,255,.1)}
+  100%{box-shadow:0 0 0 20px rgba(255,255,255,.1),0 0 0 40px rgba(255,255,255,.1),0 0 0 60px rgba(255,255,255,.1),0 0 0 80px rgba(255,255,255,0)}
+}
+
+@keyframes ripple{
+  0%{box-shadow:0 0 0 0 rgba(255,255,255,.1),0 0 0 20px rgba(255,255,255,.1),0 0 0 40px rgba(255,255,255,.1),0 0 0 60px rgba(255,255,255,.1)}
+  100%{box-shadow:0 0 0 20px rgba(255,255,255,.1),0 0 0 40px rgba(255,255,255,.1),0 0 0 60px rgba(255,255,255,.1),0 0 0 80px rgba(255,255,255,0)}
+} 
+
+ 
+
+
+
+
+
+
+
+
 .register_wrp > form img.arrowDown {
   position: absolute;
   left: -23px;
@@ -1185,10 +1309,18 @@ form.stp1 button {
   margin-bottom: 20px;
   padding: 10px 35px;
   border: none;
-  border-radius: 2px;
+  border-radius: 20px;
   background: #EB6824;
   color: #fff;
   text-transform: capitalize;
+}
+.register_wrp > form input {
+  border-radius: 50px;
+  font-size: 13px;
+}
+.bnft p span i {
+  color: #00bbd3;
+  margin-right: 5px;
 }
 
 
@@ -1215,5 +1347,99 @@ form.stp1 button {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Detailses Page Started */
+
+
+
+
+
+
+
+
+
+
+
+
+.detailses {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  min-height: 100vh;
+}
+.detailses .The_logo {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.detailses_items {
+  text-align: center;
+}
+
+.detailses_items .detailses_wrp_top {
+  padding: 0 20px;
+  max-width: 300px;
+  margin: auto;
+}
+
+.detailses_wrp_bottom {
+  width: 100%;
+  background: #2F80ED;
+  box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(40px);
+  color: #fff;
+  padding: 25px;
+  padding-bottom: 50px;
+}
+
+.detailses_wrp_bottom h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.detailses_items_carousel .owl-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailses_items_carousel .owl-dots .owl-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  transition: .3s;
+  margin: 0 2px;
+}
+
+.detailses_items_carousel .owl-dots .owl-dot.active {
+  width: 15px;
+  border-radius: 5px;
+  background: #fff;
+}
 
 
